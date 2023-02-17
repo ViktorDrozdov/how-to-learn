@@ -13,7 +13,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   color: #000000;
   background-color: #f2f2f2;
   position: relative;
@@ -59,6 +58,11 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity .2s linear;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -281,6 +285,11 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  transition: opacity .2s linear;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
 }
 
 .khan {
@@ -338,17 +347,23 @@
 .khan__book-pic {
   width: 620px;
   height: 608px;
-  background-image: url(../images/khan-book.jpg);
-  background-size: cover;
+  object-fit: cover;
+  object-position: left top;
 }
 
 .khan__buy-link {
   margin: 0 0 0 48px;
   text-decoration: none;
   color: #2f80ed;
+  align-self: flex-start;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
+  transition: opacity .2s linear;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.5;
 }
 
 .kaufman {
@@ -408,6 +423,14 @@
 }
 
 .resources__link {
+  transition: opacity .2s linear;
+}
+
+.resources__link:hover {
+  opacity: 0.5;
+}
+
+.resources__logo {
   width: 270px;
   height: 38px;
 }
@@ -466,6 +489,11 @@
   font-weight: normal;
   text-decoration: none;
   color: white;
+  transition: opacity .2s linear;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
 }
 
 .footer__social-icon {
